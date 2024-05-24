@@ -17,11 +17,12 @@ body {
     border: 1px solid black;
     position: relative;
     overflow: hidden; /* Zapewnia, że blok nie wychodzi poza granice */
+    background-color: yellow;
 
 }
 
 #character{
-    width: 20px;
+    width: 50px;
     height: 50px; /* Zmieniono wymiary do wielkości bloku */
     background-size: cover;
     background-repeat: no-repeat;
@@ -39,7 +40,7 @@ body {
     position: absolute;
     bottom: 0; /* Dostosowane pozycjonowanie */
     left: 100%; /* Początkowa pozycja na końcu pola gry */
-    animation: block 1s infinite linear;
+    animation: block 2s infinite linear;
 
     background-color: blue;
 }
