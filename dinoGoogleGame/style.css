@@ -1,45 +1,58 @@
 *{
     padding: 0;
     margin: 0;
+    box-sizing: border-box; /* Ustawienie box-sizing dla lepszej kontroli nad rozmiarami */
+}
+
+body {
+    display: flex;
+    justify-content: center; /* Wyśrodkowanie poziome */
+    align-items: center; /* Wyśrodkowanie pionowe */
 }
 
 #game{
-    width: 500px;
+    width: 100%; /* Zajmuje całą szerokość okna */
+    max-width: 500px; /* Maksymalna szerokość 500px */
     height: 200px;
     border: 1px solid black;
+    position: relative;
     overflow: hidden; /* Zapewnia, że blok nie wychodzi poza granice */
 
 }
 
 #character{
     width: 20px;
-    height: 50px;
-    background-color: red;
-    position: relative;
-    top: 150px;
+    height: 50px; /* Zmieniono wymiary do wielkości bloku */
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 0; /* Dostosowane pozycjonowanie */
+    left: 50px;
     background-image: url('kamilla-runner-0-07.gif'); /* Ścieżka do obrazka postaci */
-
+    border: 1px solid black;
 }
 #block{
     width: 20px;
     height: 20px;
-    background-color: blue;
-    position: relative;
-    top: 130px;
-    left: 480px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 0; /* Dostosowane pozycjonowanie */
+    left: 100%; /* Początkowa pozycja na końcu pola gry */
     animation: block 1s infinite linear;
 
+    background-color: blue;
 }
 .animate{
-    animation: jump 1s;
+    animation: jump .5s;
 }
 @keyframes block {
-    0%{left: 480px;}
+    0%{left: 1024 px;}
     100%{left: -40px;}
 }
 @keyframes jump {
-    0%{top: 150px;}
-    30%{top: 100px;}
-    70%{top: 100px;}
-    100%{top: 150px;}
+    0%{top: 0;}
+    30%{top: 50px;}
+    70%{top: 50px;}
+    100%{top: 0;}
 }
