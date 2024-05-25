@@ -8,6 +8,7 @@ body {
     display: flex;
     justify-content: center; /* Wyśrodkowanie poziome */
     align-items: center; /* Wyśrodkowanie pionowe */
+    background-color: rgb(194, 194, 194);
 }
 
 #game{
