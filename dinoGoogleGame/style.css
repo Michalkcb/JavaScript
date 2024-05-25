@@ -21,6 +21,7 @@ body {
 
 #scoreSpan{
     flex-grow: 0;
+    margin-bottom: 30px;
 }
 .game{
     width: 100%; /* Zajmuje całą szerokość okna */
@@ -35,8 +36,8 @@ body {
 }
 
 #character{
-    width: 50px;
-    height: 50px; /* Zmieniono wymiary do wielkości bloku */
+    width: 70px;
+    height: 70px; /* Zmieniono wymiary do wielkości bloku */
     background-size: cover;
     background-repeat: no-repeat;
     position: absolute;
@@ -46,8 +47,8 @@ body {
     /* border: 1px solid black; */
 }
 #block{
-    width: 20px;
-    height: 20px;
+    width: 40px;
+    height: 40px;
     background-size: cover;
     background-repeat: no-repeat;
     position: absolute;
@@ -55,7 +56,7 @@ body {
     left: 100%; /* Początkowa pozycja na końcu pola gry */
     animation: block 1s infinite linear;
 
-    background-color: blue;
+    background-image: url('shuriken.gif'); /* Ścieżka do obrazka postaci */
 }
 .animate{
     animation: jump .5s;
@@ -65,8 +66,8 @@ body {
     100%{left: -40px;}
 }
 @keyframes jump {
-    0%{top: 0;}
-    30%{top: 50px;}
-    70%{top: 50px;}
-    100%{top: 0;}
+    0%{bottom: 0;}
+    30%{bottom: 30px;}
+    70%{bottom: 30px;}
+    100%{bottom: 0;}
 }
