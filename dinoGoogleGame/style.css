@@ -11,14 +11,14 @@ body {
     background-color: rgb(194, 194, 194);
 }
 
-#game{
+.game{
     width: 100%; /* Zajmuje całą szerokość okna */
-    max-width: 500px; /* Maksymalna szerokość 500px */
+    /* max-width: 500px; Maksymalna szerokość 500px */
     height: 200px;
     border: 1px solid black;
     position: relative;
     overflow: hidden; /* Zapewnia, że blok nie wychodzi poza granice */
-    background-color: yellow;
+    background-color: #ffffff;
 
 }
 
