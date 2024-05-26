@@ -10,6 +10,7 @@ body {
     align-items: center; /* Wyśrodkowanie pionowe */
     background-color: rgb(194, 194, 194);
     font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
 }
 
 #container {
