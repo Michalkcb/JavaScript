@@ -18,10 +18,15 @@ body {
     flex-direction: column;
     align-items: center;
 }
+#pscore{
+    font-size: xx-large;
+
+}
 
 #scoreSpan{
     flex-grow: 0;
     margin-bottom: 30px;
+    font-size: xx-large;
 }
 .game{
     width: 100%; /* Zajmuje całą szerokość okna */
