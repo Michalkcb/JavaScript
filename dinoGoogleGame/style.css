@@ -9,6 +9,7 @@ body {
     justify-content: center; /* Wyśrodkowanie poziome */
     align-items: center; /* Wyśrodkowanie pionowe */
     background-color: rgb(194, 194, 194);
+    font-family: "Ubuntu", sans-serif;
 }
 
 #container {
