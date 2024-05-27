@@ -27,3 +27,7 @@ var checkDead = setInterval(function () {
 }, 10);
 
 document.addEventListener('keydown', jump);
+
+document.getElementById('toggle-theme').addEventListener('click', () => {
+    document.body.classList.toggle('dark-mode');
+});
